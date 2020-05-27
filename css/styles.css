@@ -1,0 +1,192 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.big-heading {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+/* Containers - use a container fluid to standardise padding throughout - search for this class in the HTML to see it in use*/
+/* padding means: 3% left 15% right 7% bottom */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+/* We separated the items in the navigation bar with a class - the first is the tindog brand */
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+/* The other 3 links in our navigation bar are just items. The padding adds pixels left and right of each item */
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Apple & Android download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title section */
+/* now empty because we've applied class rules - can delete now */
+#title {
+}
+
+/* override container fluid settings to customise in a section like this */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Title image */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  right: 30%;
+  position: absolute;
+  /* Position is left aligned, unless 'relative' is added (with a value saying where it should go) */
+}
+
+/* Features section
+  this means 7% top and bottom, 15% left and right */
+#features {
+  position:relative;
+}
+
+.feature-title {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonial section */
+/* id's are the most specific, so this background colour will override our section class */
+#testimonials {
+background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.testimonial-image {
+  width: 12%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* To group the 2 sections into one, use the same background colour */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing section */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.card-header {
+  color: #fff;
+  background-color: #ef8172;
+}
+
+.card-header:hover {
+  background-color: #ff4c68;
+}
+
+/* CTA section */
+
+#cta {
+}
+
+/* Footer section */
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+
+/* Use Chrome developer to see at which size (top right of screen) the scree starts to look weird)
+write the CSS the same, but inside the media query brackets */
+@media (max-width:1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+.title-image {
+  position: static;
+  transform: rotate(0);
+}
+}
